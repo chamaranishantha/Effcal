@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Effcal</string>
+    <string name="video_online">video online button</string>
+    <string name="video_offline">video offline button</string>
+    <string name="count_online">count start button</string>
+    <string name="count_offline">count end button</string>
+</resources>
