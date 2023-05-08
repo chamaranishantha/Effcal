@@ -173,37 +173,37 @@ public class EffcalMainActivity extends AppCompatActivity {
         mChronometer = (Chronometer) findViewById(R.id.chronometer2);
         mTextureView = (TextureView) findViewById(R.id.textureView);
         mRecordStartButton = (ImageButton) findViewById(R.id.imageButton2);
-        mRecordStartButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                if (isRecording) {
-                    //isRecording=false;
-                    Toast.makeText(getApplicationContext(), "Recording in Progress", Toast.LENGTH_SHORT).show();
-                } else {
-                    checkWriteStoragePermission();
-
-                }
-            }
-        });
+//        mRecordStartButton.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                if (isRecording) {
+//                    //isRecording=false;
+//                    Toast.makeText(getApplicationContext(), "Recording in Progress", Toast.LENGTH_SHORT).show();
+//                } else {
+//                    checkWriteStoragePermission();
+//
+//                }
+//            }
+//        });
 
         mRecordStopButton = (ImageButton) findViewById(R.id.imageButton);
-        mRecordStopButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                if (isRecording) {
-                    isRecording = false;
-                    Toast.makeText(getApplicationContext(), "Recording Stopped", Toast.LENGTH_SHORT).show();
-                    mMediaRecorder.stop();
-                    mMediaRecorder.reset();
-
-
-                    startPreview();
-                } else {
-                    Toast.makeText(getApplicationContext(), "Already Stopped Recording", Toast.LENGTH_SHORT).show();
-
-                }
-            }
-        });
+//        mRecordStopButton.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                if (isRecording) {
+//                    isRecording = false;
+//                    Toast.makeText(getApplicationContext(), "Recording Stopped", Toast.LENGTH_SHORT).show();
+//                    mMediaRecorder.stop();
+//                    mMediaRecorder.reset();
+//
+//
+//                    startPreview();
+//                } else {
+//                    Toast.makeText(getApplicationContext(), "Already Stopped Recording", Toast.LENGTH_SHORT).show();
+//
+//                }
+//            }
+//        });
 
         mCountStartButton = (ImageButton) findViewById(R.id.imageButton3);
         mCountStartButton.setOnClickListener(new View.OnClickListener() {
